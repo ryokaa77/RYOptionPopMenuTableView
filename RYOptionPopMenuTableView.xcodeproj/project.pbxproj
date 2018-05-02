@@ -13,6 +13,10 @@
 		C74553322094588000E847C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C74553312094588000E847C7 /* Assets.xcassets */; };
 		C74553352094588000E847C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C74553332094588000E847C7 /* LaunchScreen.storyboard */; };
 		C74553382094588000E847C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C74553372094588000E847C7 /* main.m */; };
+		C74553432094591100E847C7 /* RYPopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C74553422094591100E847C7 /* RYPopMenuTableViewCell.m */; };
+		C74553462094592700E847C7 /* RYPopMenuEachItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C74553452094592700E847C7 /* RYPopMenuEachItemModel.m */; };
+		C7455349209459CD00E847C7 /* RYDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7455348209459CD00E847C7 /* RYDetailVC.m */; };
+		C745534B2094608D00E847C7 /* RYPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7455340209458B700E847C7 /* RYPopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		C74553342094588000E847C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C74553362094588000E847C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C74553372094588000E847C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C745533F209458B700E847C7 /* RYPopMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYPopMenuView.h; sourceTree = "<group>"; };
+		C7455340209458B700E847C7 /* RYPopMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYPopMenuView.m; sourceTree = "<group>"; };
+		C74553412094591100E847C7 /* RYPopMenuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYPopMenuTableViewCell.h; sourceTree = "<group>"; };
+		C74553422094591100E847C7 /* RYPopMenuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYPopMenuTableViewCell.m; sourceTree = "<group>"; };
+		C74553442094592700E847C7 /* RYPopMenuEachItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYPopMenuEachItemModel.h; sourceTree = "<group>"; };
+		C74553452094592700E847C7 /* RYPopMenuEachItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYPopMenuEachItemModel.m; sourceTree = "<group>"; };
+		C7455347209459CD00E847C7 /* RYDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RYDetailVC.h; sourceTree = "<group>"; };
+		C7455348209459CD00E847C7 /* RYDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RYDetailVC.m; sourceTree = "<group>"; };
+		C745534C20946CE600E847C7 /* RYOptionPopMenuTableView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RYOptionPopMenuTableView.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +71,18 @@
 		C74553272094588000E847C7 /* RYOptionPopMenuTableView */ = {
 			isa = PBXGroup;
 			children = (
+				C745534C20946CE600E847C7 /* RYOptionPopMenuTableView.entitlements */,
+				C745533E209458B700E847C7 /* RYPopMenu */,
 				C74553282094588000E847C7 /* AppDelegate.h */,
 				C74553292094588000E847C7 /* AppDelegate.m */,
 				C745532B2094588000E847C7 /* ViewController.h */,
 				C745532C2094588000E847C7 /* ViewController.m */,
+				C7455347209459CD00E847C7 /* RYDetailVC.h */,
+				C7455348209459CD00E847C7 /* RYDetailVC.m */,
+				C74553412094591100E847C7 /* RYPopMenuTableViewCell.h */,
+				C74553422094591100E847C7 /* RYPopMenuTableViewCell.m */,
+				C74553442094592700E847C7 /* RYPopMenuEachItemModel.h */,
+				C74553452094592700E847C7 /* RYPopMenuEachItemModel.m */,
 				C745532E2094588000E847C7 /* Main.storyboard */,
 				C74553312094588000E847C7 /* Assets.xcassets */,
 				C74553332094588000E847C7 /* LaunchScreen.storyboard */,
@@ -69,6 +90,15 @@
 				C74553372094588000E847C7 /* main.m */,
 			);
 			path = RYOptionPopMenuTableView;
+			sourceTree = "<group>";
+		};
+		C745533E209458B700E847C7 /* RYPopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C745533F209458B700E847C7 /* RYPopMenuView.h */,
+				C7455340209458B700E847C7 /* RYPopMenuView.m */,
+			);
+			path = RYPopMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +133,11 @@
 					C74553242094588000E847C7 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -142,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C745534B2094608D00E847C7 /* RYPopMenuView.m in Sources */,
+				C74553462094592700E847C7 /* RYPopMenuEachItemModel.m in Sources */,
 				C745532D2094588000E847C7 /* ViewController.m in Sources */,
+				C74553432094591100E847C7 /* RYPopMenuTableViewCell.m in Sources */,
 				C74553382094588000E847C7 /* main.m in Sources */,
+				C7455349209459CD00E847C7 /* RYDetailVC.m in Sources */,
 				C745532A2094588000E847C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +317,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RYOptionPopMenuTableView/RYOptionPopMenuTableView.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W85P44U7W6;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
 				INFOPLIST_FILE = RYOptionPopMenuTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = where2eat.RYOptionPopMenuTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +335,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RYOptionPopMenuTableView/RYOptionPopMenuTableView.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W85P44U7W6;
+				DEVELOPMENT_TEAM = WU2WFZ2B66;
 				INFOPLIST_FILE = RYOptionPopMenuTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = where2eat.RYOptionPopMenuTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
